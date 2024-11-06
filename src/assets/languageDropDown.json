@@ -1,0 +1,82 @@
+[
+    {
+        "sl_no": "1",
+        "code": "en",
+        "name": "English",
+        "country_code": "gb"
+    },
+    {
+        "sl_no": "2",
+        "code": "hi",
+        "name": "हिंदी",
+        "country_code": "in"
+    },
+    {
+        "sl_no": "3",
+        "code": "bn",
+        "name": "বাংলা",
+        "country_code": "in"
+    },
+    {
+        "sl_no": "4",
+        "code": "ml",
+        "name": "മലയാളം",
+        "country_code": "in"
+    },
+    {
+        "sl_no": "5",
+        "code": "or",
+        "name": "ଓଡ଼ିଆ",
+        "country_code": "in"
+    },
+    {
+        "sl_no": "6",
+        "code": "ta",
+        "name": "தமிழ்",
+        "country_code": "in"
+    },
+    {
+        "sl_no": "7",
+        "code": "te",
+        "name": "తెలుగు",
+        "country_code": "in"
+    },
+    {
+        "sl_no": "8",
+        "code": "ur",
+        "name": "اردو",
+        "country_code": "sa"
+    },
+    {
+        "sl_no": "9",
+        "code": "ar",
+        "name": "العربية",
+        "country_code": "ae"
+    },
+    {
+        "sl_no": "10",
+        "code": "ne",
+        "name": "नेपाली",
+        "country_code": "np"
+    },
+    {
+        "sl_no": "11",
+        "code": "pl",
+        "name": "Polski",
+        "country_code": "pl"
+    },
+    {
+        "sl_no": "12",
+        "code": "ro",
+        "name": "Română",
+        "country_code": "ro"
+    },
+    {
+        "sl_no": "13",
+        "code": "si",
+        "name": "සිංහල",
+        "country_code": "lk"
+    }  
+]
+
+

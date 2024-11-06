@@ -1,0 +1,53 @@
+.input-group {
+    &.input-group-date {
+        padding: 0;
+        .form-control{
+            padding-left: 1rem;
+        }
+
+        .input-group-append {
+            cursor: pointer;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: var(--bs-body-color);
+            text-align: center;
+            white-space: nowrap;
+            color: $primary;
+        }
+    }
+
+}
+
+.datepicker {
+    &.datepicker-dropdown{
+        box-shadow: $card-box-shadow-sm;
+        .table-condensed{
+            color: $gray-500;
+            span{
+                &.year, &.month{
+                    padding-left: .125rem;
+                    padding-right: .125rem;
+                    font-size: .875rem;
+                }
+            }
+            .active{
+                background:$primary;
+                &:hover{
+                    background:darken($primary, 10);
+                }
+            }
+            th,td{
+                padding:.5rem .75rem;
+                
+            }
+            thead{
+
+            }
+        }
+    }
+}

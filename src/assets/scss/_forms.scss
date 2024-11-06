@@ -1,0 +1,139 @@
+.form-label {
+    color: $gray-500;
+    font-size: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    resize: none;
+}
+
+textarea {
+    &.form-control {
+        min-height: 5rem;
+    }
+}
+.header-label-action{
+    display: flex;
+    align-items: center;
+    .form-label{
+        flex: 1 1 auto;
+    }
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+}
+
+.input-group {
+    border: 1px solid $gray-100;
+    border-radius: .25rem;
+
+    >input,
+    >select,
+    >span {
+        border: none;
+        background-color: $white;
+        .icon{
+            color: $gray-500;
+            font-size: 1.25rem;
+        }
+        &.form-control{
+            padding-left: 0;
+        }
+       
+    }
+
+    .country-code {
+        max-width: 100px;
+    }
+}
+.form-select,.form-control{
+    &:disabled{
+        background: $white;
+        color: $gray-100;
+        border-color: $gray-50;
+    }
+}
+
+.custom-file-select {
+    position: relative;
+    border: 1px solid $gray-100;
+    border-radius: .25rem;
+    padding: 0.25rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: .875rem;
+    color: $gray-300;
+    flex-wrap: wrap;
+    white-space: nowrap;
+
+    .file-start {
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    input {
+        &[type="file"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+        }
+    }
+}
+
+.form-text {
+    color: $gray-300;
+}
+
+.form-bottom-actions {
+    border-top: 1px solid lighten($gray-100, 5);
+    padding-top: 1rem;
+    // margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    .btn {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        &.btn-outline-primary{
+            &:not(:hover){
+                border-color: $gray-100;
+            }
+        }
+    }
+}
+
+.radio-buttons{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.form-check{
+    label{
+        margin: 0;
+        color: $gray-500;
+    }
+    .form-check-input{
+        &:not(:checked){
+            &+label{
+                color: $gray-300;
+            }
+        }
+    }
+}

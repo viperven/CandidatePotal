@@ -1,0 +1,64 @@
+.custom-container {
+    min-height: 200px; /* Adjust height as needed */
+    background: linear-gradient(to right, white 80%, #FE5C35 20%);
+  }
+  @media (max-width: 991px) {
+    .custom-container {
+        background: none;
+    }
+}
+  
+  @media (max-width: 768px) {
+    .custom-container {
+      padding: 15px;
+    }
+  
+    .card {
+      margin: 0 auto;
+    }
+    .card-guide {
+      overflow: visible;
+      margin-top: 93px;
+  }
+  }
+  
+  @media (max-width: 576px) {
+    .card-body {
+      padding: 1rem;
+    }
+  
+    .list-unstyled li {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+  .card-body {
+    padding: 1.5rem; /* Increase padding for better spacing */
+  }
+  
+  .card-title {
+    margin-bottom: 1rem; /* Add margin below the title */
+  }
+  
+  ul.list-unstyled {
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  ul.list-unstyled li {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 1rem; /* Add spacing between list items */
+  }
+  
+  ul.list-unstyled li i {
+    margin-right: 0.5rem; /* Add spacing between icon and text */
+  }
+  
+  ul.list-unstyled li img {
+    margin-right: 0.5rem; /* Add spacing between image and text */
+  }
+  
+  .form-control{
+    border-radius: 15px;
+  }

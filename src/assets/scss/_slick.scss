@@ -1,0 +1,38 @@
+.slick-prev,
+.slick-next {
+    background: $primary;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: .125rem;
+
+    &:before {
+        font-family: 'boxicons' !important;
+    }
+
+    &:hover,
+    &:focus {
+        color: $white;
+        background: darken($primary, 10);
+    }
+}
+
+.slick-prev {
+    left: -2rem;
+    &:before {
+        content: "\eb33";
+    }
+}
+
+.slick-next {
+    right: -2rem;
+    &:before {
+        content: "\ebe6";
+    }
+}
+
+.slick-slider {
+    .slick-slide {
+        margin: .75rem;
+      
+    }
+}

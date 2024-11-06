@@ -1,0 +1,41 @@
+.modal{
+    .btn-close{
+        margin: 0;
+        background-size: .75rem;
+    }
+    &:not(.modal-edit-form){
+        .btn-close{
+            position: absolute;
+            top: .75rem;
+            right: .75rem;
+        }
+    }
+
+    .modal-header{
+        padding:1.5rem 2rem .75rem;
+        border: none;
+    }
+    .modal-content{
+        border-radius: $spacer;
+    }
+    .modal-title{
+        font-size: 1.75rem;
+        font-weight: 700;
+    }
+    .modal-body{
+        padding:.75rem $spacer * 2 1.5rem;
+    }
+    &.modal-edit-form{
+        .modal-footer{
+            justify-content: space-between;
+            border: none;
+        }
+        .btn{
+            &.btn-primary{
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+    }
+  
+}

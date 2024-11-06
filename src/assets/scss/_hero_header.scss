@@ -1,0 +1,125 @@
+.hero-header {
+    background-color: $lorange;
+    background-image: $heroBg;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding: 2rem 0;
+
+    @media (min-width:992px) {
+        padding: 4.5rem 0;
+    }
+
+    .text-content {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        h1 {
+            font-weight: 700;
+        }
+
+        p {
+            color: $gray-300;
+        }
+    }
+
+    .search-container {
+        display: flex;
+        background: $white;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 980px;
+        padding: 0.325rem;
+        flex-direction: column;
+        gap: $spacer;
+
+        .form-control,
+        .form-select {
+            border: none;
+            box-shadow: none;
+        }
+
+        .input-group {
+            border: 1px solid $gray-100;
+            display: flex;
+            align-items: center;
+
+            .icon {
+                padding: 0 $spacer;
+            }
+
+        }
+
+        @media (min-width:992px) {
+            margin-top: 2rem;
+            flex-direction: row;
+
+            .skill-search {
+                &.input-group {
+                    flex: 0 0 40%;
+                }
+            }
+
+            .btn {
+                font-size: 1.125rem;
+                padding: $spacer $spacer * 2;
+            }
+
+            .form-control,
+            .form-select,
+            .icon {
+                font-size: 1.125rem;
+
+                &::placeholder {
+                    color: $gray-300;
+                }
+            }
+
+            .input-group {
+                border: none;
+                position: relative;
+
+                &+.input-group {
+                    &:before {
+                        left: -.5rem;
+                        height: $spacer;
+                        background-color: $gray-100;
+                        width: 1px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        content: '';
+                        position: absolute;
+                    }
+                }
+
+                .form-select {
+                    option:first {
+                        color: $gray-300;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .tags-container {
+        margin-top: $spacer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: $spacer;
+
+        .btn {
+            font-weight: 500;
+
+            &:not(:hover) {
+                background: $white;
+                border-color: $white;
+                color: $primary;
+
+            }
+        }
+    }
+}

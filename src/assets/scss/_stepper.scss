@@ -1,0 +1,80 @@
+.stepper {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    overflow: hidden;
+    border-radius: $spacer * 3;
+    overflow: auto;
+
+
+    li {
+        position: relative;
+        &::before{
+            position: absolute;
+            width: 200px;
+            right: 0;
+            height: 0.25rem;
+            content: '';
+            background: lighten($gray-100, 5);
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+        a {
+            display: flex;
+            align-items: center;
+            gap: .25rem;
+            text-decoration: none;
+            border-radius: $spacer * 3;
+            padding: .25rem .75rem;
+            background: $gray-200;
+            color: $white;
+            border: 1px solid $gray-200;
+            font-size: .875rem;
+            position: relative;
+            z-index: 1;
+            font-weight: 600;
+
+            &:hover {
+                background: darken($gray-200, 5)
+            }
+
+
+        }
+        &.active,&.completed{
+            &:before{
+                background-color: $primary;
+            }
+        }
+
+        &.active {
+            a {
+                background: $white;
+                border-color: $primary;
+                color: $primary;
+
+                &:hover {
+                    background: lighten($primary, 35)
+                }
+            }
+
+        }
+
+        &.completed {
+            a {
+                background: $primary;
+                border-color: $primary;
+
+                &:hover {
+                    background: darken($primary, 10)
+                }
+            }
+        }
+    }
+}

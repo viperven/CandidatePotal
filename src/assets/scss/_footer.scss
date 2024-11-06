@@ -1,0 +1,143 @@
+footer {
+    background: $white;
+    padding: 2.5rem 0 0;
+
+    @media (min-width:992px) {
+        padding: 4.5rem 0 0;
+    }
+
+    .title {
+        color: $gray-500;
+        font-weight: 600;
+        font-size: 1.125rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .subtitle {
+        color: $gray-500;
+        font-size: 1.125rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .social-container {
+        margin-top: 1.5rem;
+    }
+
+    .links {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            padding: .5rem 0;
+
+            a {
+                text-decoration: none;
+                color: $primary;
+
+                &:not(:hover) {
+                    color: $gray-400;
+                }
+            }
+        }
+    }
+
+    .copyright-container{
+        padding: .5rem 0;
+        margin-top: 2rem;
+        // border-top: 1px solid $gray-100;
+        background: $light;
+        .container{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            
+            justify-content: space-between;
+            @media (min-width:992px) {
+                gap: 1.5rem;
+            }
+            p{
+                font-size: .875rem;
+                margin: 0;
+                color: $gray-300;
+            }
+            .links{
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                a{
+                    font-size: .875rem;
+                    &:not(:hover){
+                        color: $gray-300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    a {
+        height: 1.25rem;
+        width: 1.25rem;
+        flex: 0 0 1.25rem;
+        background: rgba($primary, .1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: .125rem;
+
+        &:hover {
+            background: $primary;
+            color: $white;
+        }
+    }
+}
+
+.branch {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: flex;
+            align-items: center;
+            // padding: .25rem 0;
+            gap: 1.5rem;
+            @media (min-width:992px) {
+                padding: .25rem 0;
+            }
+
+            .item {
+                display: flex;
+                gap: .5rem;
+                font-size: .875rem;
+                color: $gray-400;
+
+                .icon {
+                    position: relative;
+                    color: $gray-200;
+                    top: .25rem;
+                }
+            }
+            a {
+                text-decoration: none;
+                color: $primary;
+
+                &:not(:hover) {
+                    color: $gray-400;
+                }
+            }
+        }
+
+    }
+    &+.branch {
+        margin-top: 1.5rem;
+    }
+}

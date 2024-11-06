@@ -1,0 +1,37 @@
+/* The following line can be included in a src/App.scss */
+
+@import './common';
+
+// Bootstrap
+@import "../vendor/bootstrap/bs-scss/bootstrap.scss"; 
+// Boxicon
+@import "../vendor/boxicon/css/boxicons.css";
+@import "../vendor/boxicon/css/animations.css";
+
+// Slick Slider
+@import "../vendor/slick/slick-theme.scss";
+@import "../vendor/slick/slick.scss";
+
+
+@import './globle';  
+@import './forms';  
+@import './dropdown';  
+@import './navbar';  
+@import './modal';  
+@import './slick';  
+@import './cards';  
+@import './stepper';  
+@import './footer';  
+@import './datepicker';  
+@import './multiselect';  
+@import './search_result';  
+@import './tabs';  
+@import './job_times';  
+@import './table';  
+
+// Pages
+@import './hero_header';  
+@import './login';  
+@import './register';  
+@import './about';  
+@import './profile';  

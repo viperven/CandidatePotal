@@ -1,0 +1,14 @@
+.mediaHeading{   
+    text-align: center;
+    font-weight: 800;
+}
+
+.social-icon{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.social-icon input{
+    /* font-size: 30px; */
+}

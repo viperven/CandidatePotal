@@ -1,0 +1,100 @@
+header {
+    background: $white;
+    box-shadow: $barShadow;
+
+    .topbar {
+        display: none;
+        @media (min-width:992px) {
+            display: block;
+        }
+
+        .topbar-menus {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: .75rem 0;
+
+            >a,
+            .dropdown>a {
+                font-size: .75rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: $gray-500;
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+
+                font-weight: 500;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                position: relative;
+                font-weight: 700;
+                &.active{
+                    color: $primary;
+                    &:before{
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        content: '';
+                        width: 0.5rem;
+                        height: 0.5rem;
+                        border-radius: 50%;
+                        background-color: $primary;
+                    }
+                }
+                @media (min-width:992px) {
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    
+                }
+            }
+            .btn{
+                margin-top: 0.25rem;
+                margin-bottom: 0.25rem;
+                @media (min-width:992px) {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+            &.profile{
+                .nav-link{
+                    display: flex;
+                    align-items: center;
+                    gap: $spacer;
+                    
+                    img{
+                        display: block;
+                        width: $spacer * 2;
+                        height: $spacer * 2;
+                        border-radius: $spacer;
+                        object-fit: cover;
+                    }
+                    @media (min-width:992px) {
+                        // padding-left: 0;
+                    padding-right: 0;
+                    }
+                }
+            }
+        }
+        @media (min-width:992px) {
+            display: flex;
+            align-items: center;
+            .btn{
+                margin-left:  $spacer * .5;
+                margin-right:  $spacer * .5;
+                padding:$spacer * .25 $spacer*2;
+            }
+        }
+    }
+
+}

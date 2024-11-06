@@ -1,0 +1,92 @@
+// Nunito Sans
+// Designed by Vernon Adams, Jacques Le Bailly, Manvel Shmavonyan, Alexei Vanyashin
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400&display=swap');
+
+// Boxicons
+@import "./assets/boxicon/css/boxicons.css";
+@import "./assets/boxicon/css/animations.css";
+
+$app-font: 'Nunito Sans',
+sans-serif;
+$app-icon: 'boxicons';
+
+// Images
+$heroBg:url('../imgs/header-bg.svg');
+$guideBg:url('../imgs/shape-bg-img.svg');
+
+$spacer: 1rem !default;
+
+$white:#fff;
+$gray-50:#EAEDEF;
+$gray-100:#D5DADF;
+$gray-150:#C0C8CE;
+$gray-200:#ABB5BE;
+$gray-300:#82919E;
+$gray-400:#586C7D;
+$gray-500:#2E475D;
+$gray-600:#25394A;
+$gray-700:#1C2B38;
+$gray-800:#121C25;
+$gray-850:#0E151C;
+$gray-900:#090E13;
+$gray-950:#050709;
+$black:#000;
+
+
+$primary:#FF5C35;
+$secondary:$gray-200;
+$success:#4FB06D;
+$info:#0FBFBF;
+
+
+$lorange:#fef4ea;
+$lcyan:#b7ebec;
+$dcyan:#13bfbf;
+$orange:#FF8933;
+$light:#F6F9FC;
+
+
+$barShadow: 0px 2px 4px 0px rgba(31, 57, 67, 0.122);
+$dropdown: 0px 0px 11px 0px rgba(234, 240, 246, 1);
+
+
+$cunit:.5rem;
+
+
+// Button
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           .125rem;
+$btn-border-radius-sm:       .125rem;
+$btn-border-radius-lg:        .25rem;
+
+$btn-border-width: .125rem;
+$btn-font-weight: 700;
+
+
+// Dropdown menu
+$dropdown-border-radius:$cunit;
+$dropdown-border-width:0;
+$dropdown-spacer:0;
+$dropdown-padding-x:0;
+$dropdown-padding-y: 0;
+$dropdown-item-padding-y: $spacer;
+$dropdown-item-padding-x: $spacer;
+$dropdown-link-hover-color: $primary;
+$dropdown-link-hover-bg:$light;
+
+
+// Form Control
+$input-padding-y:                       $spacer * .5;
+$input-padding-x:                       $spacer;
+$input-font-size:                       1rem;
+$input-font-weight:                     500;
+$input-border-color:$gray-100;
+$input-border-radius:$spacer * .25;
+
+// Cards Style
+$card-border-radius: .25rem;
+$card-inner-border-radius: .25rem;
+$card-border-width: 0;
+$card-box-shadow: 0px 0px 11px #EAF0F6;
+$card-box-shadow-sm: 0px 2px 4px rgba(31, 57, 67, 0.12);
+

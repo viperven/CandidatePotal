@@ -1,0 +1,32 @@
+.nav {
+    &.nav-pills {
+        &.nav-pills-jh{
+            display: inline-flex;
+            background: $white;
+            box-shadow: $barShadow;
+            padding: 0.25rem;
+            border-radius: .25rem;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            overflow: auto;
+            width: calc(100vw - 1.5rem);
+            .nav-item{
+                .nav-link{
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                    padding: .5rem 1rem;
+                    border-radius: .25rem;
+                    font-weight: 500;
+                    &:not(.active){
+                        color: $gray-300;
+                        &:hover{
+                            background: $lorange;
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
